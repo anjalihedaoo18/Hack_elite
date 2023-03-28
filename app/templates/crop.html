@@ -1,20 +1,26 @@
 {% extends 'layout.html' %} {% block body %}
-
+<!-- <link rel="stylesheet" href="crop.css"> -->
+<link href="{{ url_for('static', filename='css/crop.css') }}" rel='stylesheet' type='text/css' />
 <style>
 
     html body {
-      background-color: rgb(206, 206, 228);
-
       
-  }
+    
+      /* <img src="{{ url_for('static', filename='images/s3.jpg') }}" class="img-fluid" alt="" /> */
+      
+    }
 
   
 </style>
 <!--Form Section-->
 <br /><br />
+<div class="main">
 <h2 style="text-align: center; margin: 0px; color: black">
   <b>Find out the most suitable crop to grow in your farm</b>
+  <div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+  </div>
 </h2>
+</div>
 <br />
 
 <div
@@ -25,6 +31,7 @@
     color: black;
     border-radius: 25px;
     padding: 10px 10px;
+    /* background-image: url(farmers.jpg); */
   "
 >
   <form method="POST" action="{{ url_for('crop_prediction') }}">

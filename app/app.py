@@ -155,6 +155,20 @@ def fertilizer_recommendation():
 
 # render disease prediction input page
 
+@ app.route('/contact-us')
+def contact_us():
+    title = 'Harvestify - Support'
+
+    return render_template('contactus.html', title=title)
+
+@ app.route('/blog')
+def blog():
+    title = 'Harvestify - Blog'
+
+    return render_template('blog.html', title=title)
+
+
+
 
 
 
