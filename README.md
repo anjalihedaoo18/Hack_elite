@@ -1,4 +1,4 @@
-# FramingTone 🌱
+# Farmington🌱
 
 A farmer website that leverages deep learning and machine learning algorithms to provide valuable insights and recommendations for farmers 
 
